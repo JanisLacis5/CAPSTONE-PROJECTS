@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto:ital,wght@1,300&display=swap");
+
+:root {
+    --backgroundColor: #1b626b;
+    --mainColor: #83e2ee;
+    --titleColor: #3bd6eb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-image: linear-gradient(
+        var(--backgroundColor),
+        var(--mainColor),
+        var(--titleColor)
+    );
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    color: hsl(0, 0%, 96%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 5fr 2fr;
+    height: 95vh;
+}
+
+h1 {
+    align-items: center;
+    display: flex;
+    font-size: 5rem;
+    grid-column: span 3;
+    justify-content: center;
+    order: 2;
+    text-align: center;
+    width: 100%;
+}
+
+.header__p {
+    font-size: 2rem;
+    grid-column-start: 2;
+    order: 3;
+}
+
+nav {
+    grid-column: span 3;
+    width: 100%;
+}
+
+ul {
+    align-items: center;
+    display: flex;
+    font-size: 1.5rem;
+    height: 100%;
+    justify-content: space-evenly;
+    order: 1;
+    width: 100%;
+}
+
+li {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+    display: block;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+a:hover {
+    color: hsl(0, 0%, 96%, 0.7);
+}
+
+img {
+    display: block;
+    width: 400px;
+    height: auto;
+    border-radius: 50%;
+    padding-bottom: 1rem;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0rem;
+    gap: 2rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+}
+
+.about_p {
+    width: 100%;
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.section_h3 {
+    padding: 1rem 0rem;
+}
+
+#contact {
+    display: block;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 150px;
+    width: 100%;
+    padding: 0;
+}
+
+.contact_h2 {
+    padding: 3rem;
+}
+
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+fieldset {
+    border: none;
+}
+
+h3 {
+    padding: 1rem;
+    padding-left: 0;
+}
+
+label,
+input,
+.contact_p {
+    margin: 0.5rem;
+    margin-left: 0;
+}
+
+.form_p {
+    padding-bottom: 1rem;
+}

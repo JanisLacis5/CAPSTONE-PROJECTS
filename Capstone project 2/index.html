@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>My resume</title>
+    </head>
+    <body>
+        <header>
+            <h1>Peter David</h1>
+            <p class="header__p">Front - end developer</p>
+            <nav>
+                <ul>
+                    <li class="nav__first"><a href="#about">About Me</a></li>
+                    <li class="nav__second"><a href="#skills">Skills</a></li>
+                    <li class="nav__third"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article id="about">
+                <img
+                    src="./img/manMain_360x360.jpg"
+                    alt="This is Me!"
+                    title="Janis"
+                    width="360"
+                    height="360"
+                />
+                <h2 class="about_h2">Hello!</h2>
+                <p class="about_p">
+                    My name is Peter. I'm a student and currently I am learning
+                    web development
+                </p>
+            </article>
+            <article id="skills">
+                <img
+                    src="./img/manSecond_360x360.jpg"
+                    alt="This is alse me!"
+                    title="Janis"
+                    width="360"
+                    height="360"
+                />
+                <h2 class="h2">My Skils</h2>
+                <section class="section">
+                    <h3 class="section_h3">Learning</h3>
+                    <p>
+                        I am a very fast learner and most importantly, I am very
+                        determined.
+                    </p>
+                </section>
+                <section class="section">
+                    <h3 class="section_h3">Basketball</h3>
+                    <p>
+                        I have been playing basketball for 10 years so I am
+                        pretty good. This year I quit because I wanted to
+                        dedicate my time to programming.
+                    </p>
+                </section>
+            </article>
+            <article id="contact">
+                <h2 class="h2 contact_h2">Contact</h2>
+                <div class="contact">
+                    <section class="contact_section">
+                        <h3>My Contacts</h3>
+                        <p class="contact_p">Phone: 12345678</p>
+                        <p class="contact_p">Email: es@mail.com</p>
+                    </section>
+                    <section class="contact_section">
+                        <h3>Want to work with me?</h3>
+                        <p class="form_p">Enter your contact details</p>
+                        <form action="get">
+                            <fieldset>
+                                <legend class="offscreen">Your contacts</legend>
+                                <p>
+                                    <label for="name">Name: </label>
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        id="name"
+                                        placeholder="Name"
+                                        autofocus
+                                        required
+                                    />
+                                </p>
+                                <p>
+                                    <label for="email">Email: </label>
+                                    <input
+                                        type="text"
+                                        name="email"
+                                        id="email"
+                                        placeholder="Email"
+                                        required
+                                    />
+                                </p>
+                                <p>
+                                    <label for="phone">Phone Number: </label>
+                                    <input
+                                        type="tel"
+                                        name="phone"
+                                        id="phone"
+                                        placeholder="12345678"
+                                    />
+                                </p>
+                            </fieldset>
+                        </form>
+                    </section>
+                </div>
+            </article>
+        </main>
+    </body>
+</html>
